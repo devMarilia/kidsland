@@ -1,23 +1,20 @@
 import { styled } from "@stitches/react";
 
 export const NavbarContainer = styled("nav", {
-  height: "60px",
+  height: "6vw",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   backgroundColor: "#f1f1f1",
 
   ".logo": {
-    fontWeight: "700",
-    fontSize: "21px",
-    margin: "15px",
-    width: "10px",
-    color: "#333",
+    maxWidth: "100%",
+    height: "auto"
   },
 
   ".nav-items a": {
     color: "#555",
-    fontSize: "16px",
+    fontSize: "1.25rem",
     textDecoration: "none",
     margin: "15px",
     position: "relative",
@@ -34,6 +31,7 @@ export const NavbarContainer = styled("nav", {
 
   "@media (max-width: 700px)": {
     borderBottom: "100%",
+    height: "15vw",
 
     ".nav-items": {
       position: "absolute",
