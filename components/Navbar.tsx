@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { NavbarContainer } from '../src/styles/navbar'
+import logo from "../public/images/logo.png"
+import Image from 'next/image';
 
 
 export const Navbar = () => {
@@ -12,7 +14,9 @@ export const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <span className="logo">Kidsland</span>
+      <span className="logo">
+      <Image src={logo}  alt='logo' />
+      </span>
       <div className={`nav-items ${isOpen && "open"}`}>
         <Link href="/" onClick={closeMenu}>
           Home
