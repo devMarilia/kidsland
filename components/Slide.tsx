@@ -23,6 +23,8 @@ const Slide: React.FC = () => {
     };
   }, [currentIndex]);
 
+  
+
   return (
     <SlideContainer ref={slideContainerRef}>
       <SlideItem className="slide-item" active={currentIndex === 0}>
