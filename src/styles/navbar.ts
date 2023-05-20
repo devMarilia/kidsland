@@ -35,7 +35,7 @@ export const NavbarContainer = styled("nav", {
 
     ".nav-items": {
       position: "absolute",
-      top: "60px",
+      top: "47px",
       display: "flex",
       flexDirection: "column",
       background: "#ddd",
